@@ -72710,6 +72710,149 @@
   </div>
 </div>
 <script type="text/javascript" id="">
+  (function (e, r) {
+    function l() {
+      var a = document.getElementsByTagName("iframe");
+      if (a)
+        for (var c = 0; c < a.length; c++)
+          if (/^https?:\/\/player.vimeo.com/.test(a[c].src) && !a[c].playerId) {
+            var b = /video\/([0-9]*)/.exec(a[c].src)[1];
+            ~a[c].src.indexOf("?")
+              ? (a[c].src += "\x26player_id\x3d" + b)
+              : (a[c].src += "?player_id\x3d" + b);
+            a[c].playerId = b;
+            g[b] = a[c];
+            console.log("getplayer", b);
+            b =
+              "//vimeo.com/api/v2/video/" +
+              b +
+              ".json?callback\x3daddPlayerData";
+            var d = document.createElement("script"),
+              e = document.getElementsByTagName("script")[0];
+            d.async = !0;
+            d.type = "text/javascript";
+            d.src = b;
+            e.parentNode.insertBefore(d, e);
+            h(a[c]);
+          }
+      5 >= m ? (m += 1) : window.clearInterval(n);
+    }
+    function p() {
+      window.clearInterval(n);
+      l();
+    }
+    function q(a) {
+      if (!/^https?:\/\/player.vimeo.com/.test(a.origin)) return !1;
+      "*" === k && (k = a.origin);
+      a = JSON.parse(a.data);
+      var c = g[a.player_id] || {},
+        b = c.videoData || {};
+      switch (a.event) {
+        case "ready":
+          if (a.player_id)
+            h(c), c.playerLoaded ? d(b, "Video Load") : (c.sendReady = !0);
+          else for (key in g) h(g[key]);
+          break;
+        case "play":
+          b.progress + 1.5 > b.duration && (b.progress = 0);
+          d(b, "Play");
+          break;
+        case "playProgress":
+          b.seekStart || 0 === b.seekStart
+            ? 2 < b.playProgressCount
+              ? ((b.progress = b.seekStart),
+                (b.seekStart = void 0),
+                d(b, "Seek Start"),
+                (b.progress = a.data.seconds),
+                d(b, "Seek End"),
+                (b.playProgressCount = 0))
+              : b.playProgressCount++
+            : (b.progress = a.data.seconds);
+          a = b;
+          if (
+            a.progress &&
+            a.duration &&
+            ((b = Math.floor((a.progress / a.duration) * 100)),
+            b > a.nextMilestone)
+          )
+            for (c = 0; c < e.length; c++)
+              if (e[c] > b) {
+                d(a, "Milestone - " + e[c - 1] + "%");
+                if (r)
+                  for (b = c - 2; e[b] >= a.nextMilestone; b--)
+                    d(a, "Milestone - " + e[b] + "%");
+                a.nextMilestone = e[c];
+                break;
+              }
+          break;
+        case "pause":
+          b.progress + 1.5 > b.duration
+            ? ((b.progress = b.duration), d(b, "Finish"))
+            : d(b, "Pause");
+          break;
+        case "seek":
+          (b.seekStart = b.progress),
+            (b.progress = a.data.seconds),
+            (b.playProgressCount = 0);
+      }
+    }
+    function f(a, c, b) {
+      c = { method: c };
+      b && (c.value = b);
+      b = JSON.stringify(c);
+      a.contentWindow.postMessage(b, k);
+    }
+    function h(a) {
+      f(a, "addEventListener", "loadProgress");
+      f(a, "addEventListener", "play");
+      f(a, "addEventListener", "playProgress");
+      f(a, "addEventListener", "pause");
+      f(a, "addEventListener", "seek");
+      f(a, "addEventListener", "finish");
+    }
+    function d(a, c) {
+      dataLayer.push({
+        event: "videoPlayerEvent",
+        videoAction: c,
+        videoTimestamp: a.progress ? a.progress : 0,
+        videoLength: a.duration,
+        videoId: a.id,
+        videoSourceUrl: a.url,
+        videoTitle: a.title,
+        videoHostPlatform: "Vimeo",
+        videoHostUser: a.user_name,
+        videoUploadDate: a.upload_date ? a.upload_date.split(" ")[0] : void 0,
+        videoPlayerWidth: a.width,
+        videoPlayerHeight: a.height,
+        videoPlayerColor: a.color,
+        videoAutoPlayEnabled: a.autoplay,
+      });
+    }
+    var g = {},
+      k = "*",
+      m = 0;
+    window.addPlayerData = function (a) {
+      console.log("adddata", a);
+      var c = g[a[0].id],
+        b = /color=([a-zA-Z0-9]*)/.exec(c.src);
+      c.videoData = a[0];
+      c.videoData.color = b ? b[1] : "default";
+      c.videoData.autoplay = String(/autoplay=(true|[1-9])/.test(c.src));
+      c.videoData.nextMilestone = e[0];
+      c.videoData.progress = 0;
+      d(c.videoData, "Player Load");
+      c.sendReady ? d(c.videoData, "Video Load") : (c.playerLoaded = !0);
+    };
+    var n = window.setInterval(l, 1e3);
+    window.addEventListener
+      ? (window.addEventListener("message", q, !1),
+        window.addEventListener("DOMContentLoaded", p))
+      : (window.attachEvent("onmessage", q, !1),
+        window.attachEvent("onload", p));
+    e.push(100);
+  })([10, 20, 30, 40, 50, 60, 70, 80, 90], !0);
+</script>
+<script type="text/javascript" id="">
   window._svq = window._svq || [];
   window._svq.push(["_setAccount", "2790.955"]);
   window._svq.push(["_trackPageView"]);
@@ -72856,7 +72999,7 @@
               type="hidden"
               name="browser_version"
               value="93"
-            /><input type="hidden" name="browser_os" value="Windows" />
+            /><input type="hidden" name="browser_os" value="Linux" />
           </form>
         </div>
       </div>
@@ -72895,4 +73038,3 @@
 <!-- [BUILD_TAG_rc.2111041619_rel_r.2111.alpha.r1] -->
 <!-- You are viewing the D7 website. :boom: -->
 <script src="https://www.tesla.com/modules/custom/tesla_mega_menu/dist/1.0.0/header.bundle.js?r22qo9"></script>
-            
