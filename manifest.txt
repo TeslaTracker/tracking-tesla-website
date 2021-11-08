@@ -1,4 +1,6 @@
+temp/tesla-website/api/tesla/footer/html/v1.html
 temp/tesla-website/api/tesla/header/v1.json
+temp/tesla-website/api/tesla/header/v2.json
 temp/tesla-website/charging.html
 temp/tesla-website/cybertruck.html
 temp/tesla-website/findus/list/services.html
