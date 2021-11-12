@@ -1,7 +1,0 @@
-temp/tesla-website/findus/list/services.html
-temp/tesla-website/findus/list/stores.html
-temp/tesla-website/findus/list/superchargers.html
-temp/tesla-website/index.html
-temp/tesla-website/model3.html
-temp/tesla-website/models.html
-temp/tesla-website/modely.html
