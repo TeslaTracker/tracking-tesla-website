@@ -1,14 +1,9 @@
 temp/tesla-website/charging.html
 temp/tesla-website/cybertruck.html
-temp/tesla-website/cybertruck/design.json
 temp/tesla-website/model3.html
-temp/tesla-website/model3/design.json
 temp/tesla-website/models.html
-temp/tesla-website/models/design.json
 temp/tesla-website/modelx.html
-temp/tesla-website/modelx/design.json
 temp/tesla-website/modely.html
-temp/tesla-website/modely/design.json
 temp/tesla-website/powerwall.html
 temp/tesla-website/roadster.html
 temp/tesla-website/solarpanels.html
