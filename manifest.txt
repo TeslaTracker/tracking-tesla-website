@@ -1,5 +1,4 @@
 temp/tesla-website/charging.html
-temp/tesla-website/cybertruck.html
 temp/tesla-website/model3.html
 temp/tesla-website/models.html
 temp/tesla-website/modelx.html
