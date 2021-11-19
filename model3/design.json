@@ -1,5 +1,5 @@
 {
-  "date": 1637283757657,
+  "date": 1637291597165,
   "KeyManager": {
     "keys": {
       "Lexicon": [
@@ -934,6 +934,7 @@
       "showQtyInput": false,
       "VehicleDetail": {},
       "showInventoryOrderFirstPaymentPolicy": false,
+      "showThirdPartyHistoryUrl": false,
       "showDOCandOMVICfees": true,
       "showVATBreakdown": false,
       "showDeliveryEstDisclaimer": false,
@@ -1005,7 +1006,8 @@
       "showVehicleInspection": false,
       "showNonTransferrable": true,
       "hideIncentivesOrderPage": false,
-      "showAvailableInState": true
+      "showAvailableInState": true,
+      "showElectronicPayment": true
     },
     "PrintPdf": {
       "vatAmountPrecision": 2,
@@ -1718,7 +1720,7 @@
   },
   "Lexicon.m3": {
     "id": 2148,
-    "effective_date": "2021-11-15T19:52:00.000Z",
+    "effective_date": "2021-11-19T02:55:00.000Z",
     "market": "US",
     "product": "m3",
     "factory": "GF00",
@@ -1730,7 +1732,7 @@
         "toggle_amount": { "if": { "selected": { "amount": 750 } } }
       }
     },
-    "name": "Marketing US 2021.Nov.15 2148.3734.3728",
+    "name": "Marketing US 2021.Nov.19 2148.3866.3728",
     "groups": [
       {
         "code": "TRIM",
@@ -4932,7 +4934,7 @@
           { "type": "eyebrow", "content": " " },
           {
             "type": "description",
-            "content": "A unique layer of protection for Tesla vehicles continuously monitors the environment around the car when it’s left unattended. When enabled, Sentry Mode enters a “Standby” state, like many home alarm systems, which uses the car’s external cameras to help detect and protect against potential threats."
+            "content": "Continuous 360° monitoring protects your Tesla when left unattended. Enabling Sentry Mode activates a “Standby” state, like many home alarm systems, which uses the car’s external cameras to help detect and protect against potential threats.<br/><br/> All-new Live Camera, available with Premium Connectivity, lets you remotely view your car's surroundings while in park, and also honk, flash and talk through the car’s speaker. Live Camera is end-to-end encrypted and cannot be accessed by Tesla."
           }
         ],
         "extra_content": [
@@ -17648,7 +17650,7 @@
         "content_localized": {}
       }
     ],
-    "copy_id": 3734,
+    "copy_id": 3866,
     "language": "en",
     "pricing_id": 3728
   }
