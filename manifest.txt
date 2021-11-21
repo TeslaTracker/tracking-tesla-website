@@ -1,5 +1,5 @@
 temp/tesla-website/cybertruck/design.json
 temp/tesla-website/model3/design.json
 temp/tesla-website/models/design.json
-temp/tesla-website/modelx/design.json
 temp/tesla-website/modely/design.json
+temp/tesla-website/modelx/design.json
