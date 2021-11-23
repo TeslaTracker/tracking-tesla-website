@@ -1,5 +1,5 @@
 {
-  "date": 1637629374312,
+  "date": 1637637237254,
   "KeyManager": {
     "keys": {
       "Lexicon": [
@@ -1362,7 +1362,7 @@
   },
   "Lexicon.mx": {
     "id": 2124,
-    "effective_date": "2021-11-19T02:55:00.000Z",
+    "effective_date": "2021-11-23T01:02:00.000Z",
     "market": "US",
     "product": "mx",
     "factory": "GF00",
@@ -1374,7 +1374,7 @@
         "toggle_amount": { "if": { "selected": { "amount": 750 } } }
       }
     },
-    "name": "Marketing US 2021.Nov.19 2124.3868.2457",
+    "name": "Marketing US 2021.Nov.23 2124.3868.4049",
     "groups": [
       {
         "code": "MODEL",
@@ -5855,7 +5855,7 @@
         "name": "Model X",
         "description": "Model X",
         "long_name": "Model X",
-        "price": 69990,
+        "price": 74990,
         "pricing": [
           { "type": "order_fee", "value": 250, "context": "USD" },
           { "type": "order_payment", "value": 0, "context": "USD" },
@@ -5866,7 +5866,7 @@
           },
           { "type": "order_payment_$MTX10", "value": 0, "context": "USD" },
           { "type": "order_payment_$MTX11", "value": 0, "context": "USD" },
-          { "type": "base", "value": 69990, "context": "USD" },
+          { "type": "base", "value": 74990, "context": "USD" },
           {
             "type": "non_refundable_order_payment_used",
             "value": 500,
@@ -8690,7 +8690,7 @@
         "price": 0,
         "pricing": [
           { "type": "base", "value": 0, "context": "USD" },
-          { "type": "base_plus_trim", "value": 69990, "context": "USD" }
+          { "type": "base_plus_trim", "value": 74990, "context": "USD" }
         ]
       },
       "$MTX03": {
@@ -8853,7 +8853,7 @@
         "price": 10000,
         "pricing": [
           { "type": "base", "value": 10000, "context": "USD" },
-          { "type": "base_plus_trim", "value": 79990, "context": "USD" }
+          { "type": "base_plus_trim", "value": 84990, "context": "USD" }
         ]
       },
       "$MTX04": {
@@ -9005,7 +9005,7 @@
         "price": 20000,
         "pricing": [
           { "type": "base", "value": 20000, "context": "USD" },
-          { "type": "base_plus_trim", "value": 89990, "context": "USD" }
+          { "type": "base_plus_trim", "value": 94990, "context": "USD" }
         ]
       },
       "$MTX05": {
@@ -9118,7 +9118,7 @@
         "price": 10000,
         "pricing": [
           { "type": "base", "value": 10000, "context": "USD" },
-          { "type": "base_plus_trim", "value": 79990, "context": "USD" }
+          { "type": "base_plus_trim", "value": 84990, "context": "USD" }
         ]
       },
       "$MTX06": {
@@ -9242,7 +9242,7 @@
         "price": 20000,
         "pricing": [
           { "type": "base", "value": 20000, "context": "USD" },
-          { "type": "base_plus_trim", "value": 89990, "context": "USD" }
+          { "type": "base_plus_trim", "value": 94990, "context": "USD" }
         ]
       },
       "$MTX07": {
@@ -9379,7 +9379,7 @@
         "price": 10000,
         "pricing": [
           { "type": "base", "value": 10000, "context": "USD" },
-          { "type": "base_plus_trim", "value": 79990, "context": "USD" }
+          { "type": "base_plus_trim", "value": 84990, "context": "USD" }
         ]
       },
       "$MTX08": {
@@ -9527,7 +9527,7 @@
         "price": 20000,
         "pricing": [
           { "type": "base", "value": 20000, "context": "USD" },
-          { "type": "base_plus_trim", "value": 89990, "context": "USD" }
+          { "type": "base_plus_trim", "value": 94990, "context": "USD" }
         ]
       },
       "$MTX10": {
@@ -9687,9 +9687,9 @@
             ]
           }
         ],
-        "price": 35000,
+        "price": 30000,
         "pricing": [
-          { "type": "base", "value": 35000, "context": "USD" },
+          { "type": "base", "value": 30000, "context": "USD" },
           { "type": "base_plus_trim", "value": 104990, "context": "USD" }
         ]
       },
@@ -9882,9 +9882,9 @@
             ]
           }
         ],
-        "price": 50000,
+        "price": 45000,
         "pricing": [
-          { "type": "base", "value": 50000, "context": "USD" },
+          { "type": "base", "value": 45000, "context": "USD" },
           { "type": "base_plus_trim", "value": 119990, "context": "USD" }
         ]
       },
@@ -10049,9 +10049,9 @@
             ]
           }
         ],
-        "price": 35000,
+        "price": 30000,
         "pricing": [
-          { "type": "base", "value": 35000, "context": "USD" },
+          { "type": "base", "value": 30000, "context": "USD" },
           { "type": "base_plus_trim", "value": 104990, "context": "USD" }
         ]
       },
@@ -15397,6 +15397,6 @@
     ],
     "copy_id": 3868,
     "language": "en",
-    "pricing_id": 2457
+    "pricing_id": 4049
   }
 }

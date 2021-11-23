@@ -1,5 +1,5 @@
 {
-  "date": 1637629350106,
+  "date": 1637637213689,
   "KeyManager": {
     "keys": {
       "Lexicon": [
@@ -1720,7 +1720,7 @@
   },
   "Lexicon.m3": {
     "id": 2148,
-    "effective_date": "2021-11-19T02:55:00.000Z",
+    "effective_date": "2021-11-23T01:01:00.000Z",
     "market": "US",
     "product": "m3",
     "factory": "GF00",
@@ -1732,7 +1732,7 @@
         "toggle_amount": { "if": { "selected": { "amount": 750 } } }
       }
     },
-    "name": "Marketing US 2021.Nov.19 2148.3866.3728",
+    "name": "Marketing US 2021.Nov.23 2148.3866.4048",
     "groups": [
       {
         "code": "TRIM",
@@ -5398,12 +5398,12 @@
                 "condition_state": "set",
                 "target_property": "price",
                 "condition_any_code": [
-                  "$MT319",
+                  "$MT313",
                   "$MT307",
-                  "$MT300",
                   "$MT318",
-                  "$MT306",
-                  "$MT313"
+                  "$MT319",
+                  "$MT300",
+                  "$MT306"
                 ]
               }
             ]
@@ -9491,10 +9491,10 @@
             ]
           }
         ],
-        "price": 8900,
+        "price": 11900,
         "pricing": [
-          { "type": "base", "value": 8900, "context": "USD" },
-          { "type": "base_plus_trim", "value": 43900, "context": "USD" }
+          { "type": "base", "value": 11900, "context": "USD" },
+          { "type": "base_plus_trim", "value": 46900, "context": "USD" }
         ]
       },
       "$MT303": {
@@ -9846,10 +9846,10 @@
             ]
           }
         ],
-        "price": 3900,
+        "price": 6900,
         "pricing": [
-          { "type": "base", "value": 3900, "context": "USD" },
-          { "type": "base_plus_trim", "value": 38900, "context": "USD" }
+          { "type": "base", "value": 6900, "context": "USD" },
+          { "type": "base_plus_trim", "value": 41900, "context": "USD" }
         ]
       },
       "$MT307": {
@@ -10208,10 +10208,10 @@
             ]
           }
         ],
-        "price": 8900,
+        "price": 11900,
         "pricing": [
-          { "type": "base", "value": 8900, "context": "USD" },
-          { "type": "base_plus_trim", "value": 43900, "context": "USD" }
+          { "type": "base", "value": 11900, "context": "USD" },
+          { "type": "base_plus_trim", "value": 46900, "context": "USD" }
         ]
       },
       "$MT310": {
@@ -17652,6 +17652,6 @@
     ],
     "copy_id": 3866,
     "language": "en",
-    "pricing_id": 3728
+    "pricing_id": 4048
   }
 }

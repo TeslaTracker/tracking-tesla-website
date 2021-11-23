@@ -1,5 +1,5 @@
 {
-  "date": 1637629311239,
+  "date": 1637637245044,
   "KeyManager": {
     "keys": {
       "Lexicon": [
@@ -1319,7 +1319,7 @@
   },
   "Lexicon.ms": {
     "id": 2121,
-    "effective_date": "2021-11-19T02:55:00.000Z",
+    "effective_date": "2021-11-23T01:02:00.000Z",
     "market": "US",
     "product": "ms",
     "factory": "GF00",
@@ -1331,7 +1331,7 @@
         "toggle_amount": { "if": { "selected": { "amount": 750 } } }
       }
     },
-    "name": "Marketing US 2021.Nov.19 2121.3809.2460",
+    "name": "Marketing US 2021.Nov.23 2121.3809.4047",
     "groups": [
       {
         "code": "MODEL",
@@ -5602,7 +5602,7 @@
         "name": "Model S",
         "description": "Model S",
         "long_name": "Model S",
-        "price": 64990,
+        "price": 68990,
         "pricing": [
           { "type": "order_fee", "value": 250, "context": "USD" },
           { "type": "order_payment", "value": 0, "context": "USD" },
@@ -5614,7 +5614,7 @@
           { "type": "order_payment_$MTS09", "value": 1000, "context": "USD" },
           { "type": "order_payment_$MTS10", "value": 0, "context": "USD" },
           { "type": "order_payment_$MTS11", "value": 0, "context": "USD" },
-          { "type": "base", "value": 64990, "context": "USD" },
+          { "type": "base", "value": 68990, "context": "USD" },
           {
             "type": "non_refundable_order_payment_used",
             "value": 500,
@@ -8900,7 +8900,7 @@
         "price": 0,
         "pricing": [
           { "type": "base", "value": 0, "context": "USD" },
-          { "type": "base_plus_trim", "value": 64990, "context": "USD" }
+          { "type": "base_plus_trim", "value": 68990, "context": "USD" }
         ]
       },
       "$MTS03": {
@@ -9023,7 +9023,7 @@
         "price": 4430,
         "pricing": [
           { "type": "base", "value": 4430, "context": "USD" },
-          { "type": "base_plus_trim", "value": 69420, "context": "USD" }
+          { "type": "base_plus_trim", "value": 73420, "context": "USD" }
         ]
       },
       "$MTS04": {
@@ -9168,7 +9168,7 @@
         "price": 20000,
         "pricing": [
           { "type": "base", "value": 20000, "context": "USD" },
-          { "type": "base_plus_trim", "value": 84990, "context": "USD" }
+          { "type": "base_plus_trim", "value": 88990, "context": "USD" }
         ]
       },
       "$MTS05": {
@@ -9305,7 +9305,7 @@
         "price": 4430,
         "pricing": [
           { "type": "base", "value": 4430, "context": "USD" },
-          { "type": "base_plus_trim", "value": 69420, "context": "USD" }
+          { "type": "base_plus_trim", "value": 73420, "context": "USD" }
         ]
       },
       "$MTS06": {
@@ -9456,7 +9456,7 @@
         "price": 20000,
         "pricing": [
           { "type": "base", "value": 20000, "context": "USD" },
-          { "type": "base_plus_trim", "value": 84990, "context": "USD" }
+          { "type": "base_plus_trim", "value": 88990, "context": "USD" }
         ]
       },
       "$MTS07": {
@@ -9617,7 +9617,7 @@
         "price": 4430,
         "pricing": [
           { "type": "base", "value": 4430, "context": "USD" },
-          { "type": "base_plus_trim", "value": 69420, "context": "USD" }
+          { "type": "base_plus_trim", "value": 73420, "context": "USD" }
         ]
       },
       "$MTS08": {
@@ -9768,7 +9768,7 @@
         "price": 20000,
         "pricing": [
           { "type": "base", "value": 20000, "context": "USD" },
-          { "type": "base_plus_trim", "value": 84990, "context": "USD" }
+          { "type": "base_plus_trim", "value": 88990, "context": "USD" }
         ]
       },
       "$MTS09": {
@@ -9932,9 +9932,9 @@
             ]
           }
         ],
-        "price": 85000,
+        "price": 81000,
         "pricing": [
-          { "type": "base", "value": 85000, "context": "USD" },
+          { "type": "base", "value": 81000, "context": "USD" },
           { "type": "base_plus_trim", "value": 149990, "context": "USD" }
         ]
       },
@@ -10097,9 +10097,9 @@
             ]
           }
         ],
-        "price": 30000,
+        "price": 26000,
         "pricing": [
-          { "type": "base", "value": 30000, "context": "USD" },
+          { "type": "base", "value": 26000, "context": "USD" },
           { "type": "base_plus_trim", "value": 94990, "context": "USD" }
         ]
       },
@@ -10294,9 +10294,9 @@
             ]
           }
         ],
-        "price": 65000,
+        "price": 61000,
         "pricing": [
-          { "type": "base", "value": 65000, "context": "USD" },
+          { "type": "base", "value": 61000, "context": "USD" },
           { "type": "base_plus_trim", "value": 129990, "context": "USD" }
         ]
       },
@@ -10463,9 +10463,9 @@
             ]
           }
         ],
-        "price": 30000,
+        "price": 26000,
         "pricing": [
-          { "type": "base", "value": 30000, "context": "USD" },
+          { "type": "base", "value": 26000, "context": "USD" },
           { "type": "base_plus_trim", "value": 94990, "context": "USD" }
         ]
       },
@@ -17907,6 +17907,6 @@
     ],
     "copy_id": 3809,
     "language": "en",
-    "pricing_id": 2460
+    "pricing_id": 4047
   }
 }
